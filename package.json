@@ -1,0 +1,30 @@
+{
+  "name": "challenge_app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "antd": "^4.12.2",
+    "axios": "^0.21.1",
+    "global": "^4.4.0",
+    "moment": "^2.29.1",
+    "next": "10.0.6",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-redux": "^7.2.2",
+    "react-resize-detector": "^6.5.0",
+    "redux": "^4.0.5",
+    "redux-devtools": "^3.7.0",
+    "redux-thunk": "^2.3.0",
+    "sweetalert2": "^10.14.0",
+    "webpack": "^5.21.2"
+  }
+}
