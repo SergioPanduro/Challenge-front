@@ -296,7 +296,7 @@ const Tables = () => {
                         <div style={{textAlign:"center",color:"black",backgroundColor:"white",minHeight:"80vh"}}>
                             <div style={{display:"flex",flexDirection:"row",height:50}} className="borderColor">
                                 <div style={{marginTop:10,marginLeft:"2%"}}>
-                                    <p style={{color:"black",fontSize:16,fontWeight:700}}>Tasks</p>
+                                    <p style={{color:"black",fontSize:16,fontWeight:700}}>Tasks </p>
                                 </div>
                                 <div style={{position:"absolute",right:"4%",marginTop:10, display:"flex",flexDirection:"row"}}>
                                     <DatePicker onChange={(date, dateString) => filtro(dateString)} style={{marginRight:10}} defaultValue={moment(new Date(), dateFormat)} format={dateFormat} />
@@ -304,7 +304,7 @@ const Tables = () => {
                                     <div onClick={()=>{setModal(true)}} className="buttons"><AddCircleOutlineIcon style={{fontSize:20,marginRight:5}} />Add Task</div>
                                 </div>
                             </div>
-                            <Table columns={widthWindow < 700?columnsResponsive : columns} dataSource={ todo} size="middle" pagination={false} style={{paddingLeft:"2%"}} />
+                            <Table pagination={{pageSize:8}} columns={widthWindow < 700?columnsResponsive : columns} dataSource={ todo} size="middle" style={{paddingLeft:"2%"}} />
                         </div>
                     </Grid>
                 </Grid>
